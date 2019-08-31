@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NextViewController" customModule="NavigationCustomAnimation" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="2Lp-Xn-t3m" id="hsg-qn-CcK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3K4-Lk-cQd">
+                    <rect key="frame" x="186.5" y="54" width="41" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="返回">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="QLm-1Q-8zK"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2Lp-Xn-t3m">
+                    <rect key="frame" x="0.0" y="90" width="414" height="772"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.98823529409999999" green="0.22352941179999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="2Lp-Xn-t3m" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Lyk-2V-2x1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2Lp-Xn-t3m" secondAttribute="bottom" id="TTv-YU-iZE"/>
+                <constraint firstItem="3K4-Lk-cQd" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="aWa-NA-dxH"/>
+                <constraint firstItem="2Lp-Xn-t3m" firstAttribute="top" secondItem="3K4-Lk-cQd" secondAttribute="bottom" id="eys-uI-tnO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2Lp-Xn-t3m" secondAttribute="trailing" id="j1i-ZB-p0b"/>
+                <constraint firstItem="3K4-Lk-cQd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="r8r-xe-pfJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
